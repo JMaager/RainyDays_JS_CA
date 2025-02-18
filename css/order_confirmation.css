@@ -1,0 +1,46 @@
+/*Order confirmation page styling*/
+.confirmation-content {
+  font-family: "merriweather", sans-serif;
+  background-color: rgba(10, 54, 65, 1);
+  color: white;
+  max-width: 400px;
+  padding: 2em;
+  margin: 2em auto;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.confirmation-content h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding-bottom: 5em;
+}
+.confirmation-content p {
+  font-size: 14px;
+  margin: 1em 0;
+  padding-bottom: 15em;
+}
+.confirmation-contact {
+  margin-top: 2em;
+}
+.confirmation-contact p {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
+}
+.confirmation-contact button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "merriweather", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  .confirmation-content {
+    max-width: 250px;
+  }
+}

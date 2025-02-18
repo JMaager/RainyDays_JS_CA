@@ -1,0 +1,72 @@
+/*jackets page, list of all jackets*/
+.product-preview-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+.product-preview {
+  background-color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  border: 2px solid black;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.product-preview h2 {
+  position: absolute;
+  border-bottom: 2px solid black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  font-family: merriweather, sans-serif;
+  text-align: center;
+  padding: 4px 0;
+  margin: 0;
+}
+.product-preview img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-grow: 1;
+  width: 220;
+  object-fit: cover;
+}
+.product-preview-price p {
+  position: absolute;
+  border-top: 2px solid black;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 4px 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.product-preview {
+  margin-bottom: 20px;
+}
+.product-preview:last-child {
+  margin-bottom: 0;
+}
+.product-preview {
+  flex: 0 1 260px;
+  max-width: 260px;
+}
+.product-preview a {
+  text-decoration: none;
+  color: black;
+}
+.product-preview .cta-40 {
+  right: 5%;
+  top: 10%;
+}

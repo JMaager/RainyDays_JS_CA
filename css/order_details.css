@@ -1,0 +1,45 @@
+/*Order details page styling*/
+.form-container {
+  font-family: "merriweather", sans-serif;
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.form-container h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.2em;
+}
+.form-row {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+.form-group input {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-group input::placeholder {
+  color: #999;
+}
+@media (max-width: 1200px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+}

@@ -1,0 +1,250 @@
+/*Product page specific product styling*/
+.product-page-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  font-family: "merriweather", sans-serif;
+  gap: 20rem;
+}
+.product-image img {
+  width: 450px;
+  position: relative;
+  justify-self: left;
+  margin: 3rem;
+  border: 2px solid black;
+  margin-left: 10rem;
+  margin-top: 0;
+}
+.backarrow img {
+  max-width: 64px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10rem;
+}
+.image-backarrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.2rem;
+}
+.product-info-container {
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.product-info-bottomcontainer {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-name {
+  background-color: rgba(10, 54, 65, 1);
+  color: #fff;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 3rem;
+}
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border: 2px solid black;
+  text-align: left;
+  margin: 3rem;
+}
+.product-description h2 {
+  text-transform: uppercase;
+  font-family: "merriweather";
+  background-color: rgba(10, 54, 65, 1);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0;
+  border-bottom: 2px solid black;
+}
+.product-description p {
+  margin: 0;
+  padding: 1rem;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 3rem;
+  font-family: "bebas neue", sans-serif;
+  text-align: center;
+  max-height: 62.75px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.product-addtocart {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 203, 59, 1);
+  border: 2px solid black;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-height: 62.75px;
+  font-family: "bebas neue", sans-serif;
+  font-size: 1.8rem;
+  border-radius: 50px;
+  &:hover {
+    background-color: rgb(255, 208, 79);
+  }
+}
+@media (max-width: 1600px) {
+  .product-image img {
+    width: 400px;
+    margin-left: 3rem;
+  }
+  .backarrow img {
+    margin-left: 3rem;
+  }
+  .product-page-container {
+    gap: 0rem;
+  }
+}
+@media (max-width: 1000px) {
+  .product-page-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-image img {
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .backarrow img {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .product-page-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin: 0 auto;
+  }
+  .product-image img {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .product-name {
+    font-size: 0.6rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .product-info-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .product-description {
+    margin: 0 auto;
+  }
+  .product-info-bottomcontainer {
+    margin: 0 auto;
+    margin-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product-addtocart {
+    font-size: 1.5rem;
+    height: 2rem;
+    padding: 1;
+  }
+  .product-price {
+    margin-bottom: 0 auto;
+    padding: 1;
+    height: 2rem;
+    font-size: 2rem;
+    justify-content: center;
+  }
+  .backarrow img {
+    width: 46px;
+  }
+}
+.product-addtocart a {
+  color: black;
+}
+/*STYLING FOR SIZE BUTTONS*/
+.size-selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.size-selector {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 2px solid black;
+  text-align: center;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.size-label {
+  background-color: rgba(10, 54, 65, 1);
+  color: white;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.size-selector input[type="radio"] {
+  display: none;
+}
+.size-selector label {
+  flex: 1;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid black;
+  border-right: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  font-family: "bebas neue", sans-serif;
+}
+.size-selector input[type="radio"]:checked + label {
+  background-color: #ccc;
+  color: black;
+}
+.size-selector label:first-of-type {
+  border-left: none;
+}
+.size-selector input[type="radio"]:last-of-type {
+  border-right: 1px solid black;
+}
+.size-options {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .size-selector-container {
+    margin-top: 0.5rem;
+    order: 1;
+    margin: 1rem;
+  }
+}
+/*STYLING FOR SIZE BUTTONS*/

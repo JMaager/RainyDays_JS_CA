@@ -1,0 +1,116 @@
+/*Empty Cart styling*/
+.cart-empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-empty-heading {
+  font-family: "merriweather", sans-serif;
+  font-size: 16px;
+  margin: 8rem;
+  margin-bottom: 14rem;
+}
+.cart-empty-button {
+  margin: 3rem;
+}
+@media (max-width: 1200px) {
+  .cart-empty-heading {
+    font-size: 8px;
+  }
+  .cart-empty-button button {
+    font-size: 24px;
+    border: 2px solid black;
+  }
+}
+@media (max-width: 800px) {
+  .cart-empty-heading {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .cart-empty-button button {
+    font-size: 18px;
+    -webkit-text-stroke: 0;
+  }
+}
+
+/*Cart styling*/
+.cart-container {
+  background-color: rgba(10, 54, 65, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.cart-heading {
+  text-align: center;
+  color: #fff;
+  font-family: "merriweather", sans-serif;
+  font-size: 15px;
+}
+.cart-item-container {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+}
+.cart-item-image img {
+  max-width: 70px;
+  border: 2px solid black;
+  margin: 1rem;
+}
+.cart-item-trash img {
+  width: 32px;
+}
+.cart-item-nametrash {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.cart-item-price {
+  font-size: 1.4rem;
+}
+.cart-item-name {
+  font-family: "merriweather", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.cart-total {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  color: #000000;
+}
+.cart-checkout {
+  margin: 1rem;
+}
+.cart-checkout button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "merriweather", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  .cart-container {
+    max-width: 350px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}

@@ -1,0 +1,36 @@
+/*Contact us page styling*/
+.contact-main {
+  font-family: merriweather, sans-serif;
+  position: relative;
+  padding: 4em;
+  text-align: left;
+  margin: 0 auto;
+}
+.contact-main h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.contact-header {
+  font-size: 20px;
+}
+.contact-section {
+  flex: 1;
+  min-width: 200px;
+}
+.contact-section a {
+  color: #000000;
+  text-decoration: none;
+}
+.contact-section a:hover {
+  text-decoration: underline;
+}
+.contact-social {
+  margin-top: 2em;
+}
+.contact-info {
+  margin-bottom: 2em;
+  gap: 2em;
+}
+.contact-main p {
+  font-size: 16px;
+}
