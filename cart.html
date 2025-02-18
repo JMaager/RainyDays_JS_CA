@@ -1,112 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="./css/styles.css" rel="Stylesheet" />
-    <link href="./css/cart.css" rel="Stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/cart.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RainyDays | Cart</title>
-    <meta
-      name="description"
-      content="Page showing item that has been added to the cart"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Shopping Cart Page" />
   </head>
   <body>
     <header>
       <section class="header-nav">
         <div>
           <input type="checkbox" id="menu-checkbox" />
-          <label for="menu-checkbox"
-            ><img
+          <label for="menu-checkbox">
+            <img
               src="./images/Hamburger.png"
               width="64px"
               class="hamburger"
-              alt="picture of hamburger menu"
-          /></label>
+              alt="Hamburger menu"
+            />
+          </label>
           <nav class="navigation">
             <div class="container">
               <ul class="menu-nav">
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./jackets.html">jackets</a></li>
-                <li><a href="./about.html">about</a></li>
-                <li><a href="./contact.html">contact us</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
         <div id="cart">
-          <a href="./cart_empty.html"
-            ><img
-              src="./images/cart.png"
-              width="64px"
-              alt="picture of a shopping cart"
-          /></a>
+          <a href="./cart.html">
+            <img src="./images/cart.png" width="64px" alt="Shopping cart" />
+          </a>
         </div>
       </section>
     </header>
+
     <main>
       <a href="./index.html" class="rainydayslogo">
-        <img
-          src="./images/RainyDays_Logo.png"
-          alt="RainyDays Logo and link to homepage"
-        />
+        <img src="./images/RainyDays_Logo.png" alt="RainyDays Logo" />
       </a>
+
+      <!-- 🛒 Cart Content Will Be Filled Dynamically -->
       <section class="cart-container">
         <div class="cart-heading">
-          <h1>Items in cart</h1>
+          <h1>Items in Cart</h1>
         </div>
-        <div class="cart-item-container">
-          <div class="cart-item-image">
-            <img
-              src="./images/RainyDays_Jacket7.jpg"
-              alt="picture of product, displays a brown jacket"
-            />
-          </div>
-          <div class="cart-item-aligner">
-            <div class="cart-item-nametrash">
-              <div class="cart-item-name">
-                <h2>Heritage Brown Adventure Jacket</h2>
-              </div>
-              <div class="cart-item-trash">
-                <a href="./index.html"
-                  ><img src="./images/trash.png" alt="picture of trashcan"
-                /></a>
-              </div>
-            </div>
-            <div class="cart-item-price">
-              <p>60$</p>
-            </div>
-          </div>
-        </div>
+
+        <!-- ✅ Cart items dynamically inserted here -->
+        <div id="cart-items"></div>
+
         <div class="cart-total">
           <div class="cart-total-title">
             <p>Order total:</p>
           </div>
           <div class="cart-total-sum">
-            <p>60$</p>
+            <p id="cart-total-price">$0.00</p>
           </div>
         </div>
+
         <div class="cart-checkout-cta">
           <div class="cart-checkout">
             <a href="./order_details.html"
-              ><button>Proceed to checkout</button></a
+              ><button>Proceed to Checkout</button></a
             >
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>&copy;rainydays2024</p>
+      <p>&copy; RainyDays 2024</p>
     </footer>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

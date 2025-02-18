@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: stretch;
   font-family: "merriweather", sans-serif;
-  gap: 20rem;
+  gap: 5rem;
 }
 .product-image img {
   width: 450px;

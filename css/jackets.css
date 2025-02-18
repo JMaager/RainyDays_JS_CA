@@ -1,5 +1,5 @@
 /*jackets page, list of all jackets*/
-.product-preview-container {
+#product-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: space-around;
   width: 260px;
+  height: 360px;
   border: 2px solid black;
   overflow: hidden;
   box-sizing: border-box;
@@ -36,8 +37,9 @@
   margin-top: 40px;
   margin-bottom: 40px;
   flex-grow: 1;
-  width: 220;
   object-fit: cover;
+  max-width: 100%;
+  max-height: 67%;
 }
 .product-preview-price p {
   position: absolute;
@@ -66,7 +68,21 @@
   text-decoration: none;
   color: black;
 }
-.product-preview .cta-40 {
-  right: 5%;
+
+.cta-sale {
+  background-color: rgba(255, 0, 0, 1);
+  font-size: 2.5rem;
+  color: #fff;
+  -webkit-text-stroke: 1px black;
+  text-decoration: none;
+  padding: 0;
+  height: 50px;
+  position: absolute;
+  border-radius: 25px;
   top: 10%;
+  left: 1%;
+}
+.cta-sale p {
+  padding: 0px 10px 0px 10px;
+  margin: 0;
 }

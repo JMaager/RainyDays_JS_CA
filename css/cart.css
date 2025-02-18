@@ -53,7 +53,7 @@
   font-family: "merriweather", sans-serif;
   font-size: 15px;
 }
-.cart-item-container {
+.cart-items {
   background-color: #fff;
   display: flex;
   width: 100%;

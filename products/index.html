@@ -5,10 +5,10 @@
     <link href="../css/product_page.css" rel="Stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RainyDays | Red Ski</title>
+    <title>RainyDays | Heritage Brown</title>
     <meta
       name="description"
-      content="Product page for the jacket Red Ski X-A"
+      content="Product page for the jacket Heritage Brown Adventure Jacket"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +37,7 @@
             <div class="container">
               <ul class="menu-nav">
                 <li><a href="../index.html">home</a></li>
-                <li><a href="../jackets.html">jackets</a></li>
+                <li><a href="../products.html">jackets</a></li>
                 <li><a href="../about.html">about</a></li>
                 <li><a href="../contact.html">contact us</a></li>
               </ul>
@@ -63,47 +63,32 @@
       </a>
       <section class="product-page-container">
         <div class="image-backarrow">
-          <a href="../jackets.html" class="backarrow"
+          <a href="../products.html" class="backarrow"
             ><img src="../images/backarrow.png"
           /></a>
-          <div class="product-image">
-            <img
-              src="../images/RainyDays_Jacket3.jpg"
-              alt="picture of product, displays a brown jacket"
-            />
+          <div class="product-image" id="product-image">
+            <img src="" alt="" />
           </div>
         </div>
         <div class="product-info-container">
           <div class="product-name">
-            <h1>Red Ski X-A</h1>
+            <h1 id="product-title"></h1>
           </div>
           <div class="product-description">
             <h2>description</h2>
-            <p>
-              This item is the placeholder for none sale items. Clicking “ADD TO
-              CART” will continue with the item on sale.
-            </p>
+            <p id="product-description"></p>
           </div>
           <div class="product-info-bottomcontainer">
             <div class="product-price">
-              <p>100$</p>
+              <p id="product-price"></p>
             </div>
-            <div class="size-selector-container">
+            <section class="size-selector-container">
               <div class="size-selector">
                 <div class="size-label">Size</div>
-                <div class="size-options">
-                  <input type="radio" id="size-m" name="size" value="M" />
-                  <label for="size-m">M</label>
-
-                  <input type="radio" id="size-l" name="size" value="L" />
-                  <label for="size-l">L</label>
-
-                  <input type="radio" id="size-xl" name="size" value="XL" />
-                  <label for="size-xl">XL</label>
-                </div>
+                <div class="size-options" id="size-options"></div>
               </div>
-            </div>
-            <div class="product-addtocart">
+            </section>
+            <div class="product-addtocart" id="add-to-cart">
               <a href="../cart.html"><h4>add to cart</h4></a>
             </div>
           </div>
@@ -113,5 +98,6 @@
     <footer>
       <p>&copy;rainydays2024</p>
     </footer>
+    <script src="../js/product.js"></script>
   </body>
 </html>
