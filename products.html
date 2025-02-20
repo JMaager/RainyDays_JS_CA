@@ -42,7 +42,7 @@
           </nav>
         </div>
         <div id="cart">
-          <a href="./cart_empty.html"
+          <a href="./cart.html"
             ><img
               src="./images/cart.png"
               width="64px"
@@ -63,11 +63,19 @@
           <a href="./products.html" class="cta-button">explore comfort</a>
         </nav>
       </div>
+      <section class="product-filter">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Male">Men</button>
+        <button class="filter-btn" data-filter="Female">Women</button>
+        <button class="filter-btn" data-filter="onSale">On Sale</button>
+      </section>
+
       <section id="product-list"></section>
     </main>
     <footer>
       <p>&copy;rainydays2024</p>
     </footer>
+    <script src="./js/global.js"></script>
     <script src="./js/products.js"></script>
   </body>
 </html>

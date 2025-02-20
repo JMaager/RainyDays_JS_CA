@@ -45,7 +45,7 @@
           </nav>
         </div>
         <div id="cart">
-          <a href="./cart_empty.html"
+          <a href="./cart.html"
             ><img
               src="./images/cart.png"
               width="64px"
@@ -118,6 +118,15 @@
           </div>
         </div>
       </section>
+      <section id="order-summary-container">
+        <h2 class="form-container, form-group">Order Summary</h2>
+        <div id="order-summary"></div>
+        <p>
+          <strong
+            >Total Price: <span id="order-total-price">$0.00</span></strong
+          >
+        </p>
+      </section>
       <div>
         <nav class="explorecomfort">
           <a href="./order_confirmation.html" class="cta-button"
@@ -129,5 +138,7 @@
     <footer>
       <p>&copy;rainydays2024</p>
     </footer>
+    <script src="./js/global.js"></script>
+    <script src="../js/order_details.js"></script>
   </body>
 </html>

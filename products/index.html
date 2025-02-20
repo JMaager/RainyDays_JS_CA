@@ -45,7 +45,7 @@
           </nav>
         </div>
         <div id="cart">
-          <a href="../cart_empty.html"
+          <a href="../cart.html"
             ><img
               src="../images/cart.png"
               width="64px"
@@ -66,8 +66,8 @@
           <a href="../products.html" class="backarrow"
             ><img src="../images/backarrow.png"
           /></a>
-          <div class="product-image" id="product-image">
-            <img src="" alt="" />
+          <div class="product-image">
+            <img id="product-image" src="" alt="" />
           </div>
         </div>
         <div class="product-info-container">
@@ -79,15 +79,15 @@
             <p id="product-description"></p>
           </div>
           <div class="product-info-bottomcontainer">
-            <div class="product-price">
-              <p id="product-price"></p>
-            </div>
             <section class="size-selector-container">
               <div class="size-selector">
                 <div class="size-label">Size</div>
                 <div class="size-options" id="size-options"></div>
               </div>
             </section>
+            <div class="product-price">
+              <p id="product-price"></p>
+            </div>
             <div class="product-addtocart" id="add-to-cart">
               <a href="../cart.html"><h4>add to cart</h4></a>
             </div>
@@ -98,6 +98,7 @@
     <footer>
       <p>&copy;rainydays2024</p>
     </footer>
+    <script src="../js/global.js"></script>
     <script src="../js/product.js"></script>
   </body>
 </html>

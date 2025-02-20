@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://jmaager.github.io/RainyDays_webpage_CA/css/styles.css"
-      rel="Stylesheet"
-    />
+    <link href="./css/styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RainyDays | Homepage</title>
@@ -47,7 +44,7 @@
           </nav>
         </div>
         <div id="cart">
-          <a href="./cart_empty.html"
+          <a href="./cart.html"
             ><img
               src="./images/cart.png"
               width="64px"
@@ -80,17 +77,21 @@
           </div>
         </section>
         <section class="homepage-sale">
-          <div class="fall-sale">
-            <a href="./products/index.html?id=placeholder" class="cta-sale"
-              >Trending</a
-            >
-          </div>
-          <div class="sale-products"></div>
+          <section id="featured-products">
+            <div class="carousel">
+              <button id="prev-btn" class="carousel-btn">&larr;</button>
+              <div id="featured-container" class="carousel-track"></div>
+              <button id="next-btn" class="carousel-btn">&rarr;</button>
+            </div>
+            <div id="carousel-indicators" class="carousel-indicators"></div>
+          </section>
         </section>
       </section>
     </main>
     <footer>
       <p>&copy;rainydays2024</p>
     </footer>
+    <script src="./js/global.js"></script>
+    <script src="./js/featured.js"></script>
   </body>
 </html>

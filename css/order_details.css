@@ -36,10 +36,69 @@
 .form-group input::placeholder {
   color: #999;
 }
+
 @media (max-width: 1200px) {
   .form-row {
     flex-direction: column;
   }
 }
 @media (max-width: 800px) {
+}
+
+#order-summary-container {
+  font-family: "merriweather", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  padding-top: 0px;
+}
+
+#order-summary-container h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.2em;
+}
+
+.order-summary-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid black;
+}
+
+.order-item-image {
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.order-item-details h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.order-item-details p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0.3em 0;
+}
+
+#order-total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+@media (max-width: 1200px) {
+  .order-summary-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item-image {
+    width: 100px;
+  }
 }

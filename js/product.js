@@ -7,6 +7,7 @@ function getProductId() {
 }
 
 async function fetchProduct() {
+  showLoading();
   const productId = getProductId();
   if (!productId) {
     document.getElementById("product-page-container").innerHTML =
@@ -64,6 +65,8 @@ async function fetchProduct() {
     console.error("Error loading product:", error);
     document.getElementById("product-page-container").innerHTML =
       "<p>Failed to load product. Please try again later.</p>";
+  } finally {
+    hideLoading();
   }
 }
 
