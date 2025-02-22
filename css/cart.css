@@ -64,6 +64,8 @@
   max-width: 500px;
   margin: 0 auto;
   position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .cart-heading {
   text-align: center;
