@@ -22,7 +22,6 @@ async function fetchFeaturedProducts() {
     hideLoading();
   }
 }
-document.addEventListener("DOMContentLoaded", fetchFeaturedProducts);
 
 function displayFeaturedProducts() {
   const featuredContainer = document.getElementById("featured-container");

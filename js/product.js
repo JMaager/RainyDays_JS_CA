@@ -9,17 +9,23 @@ function getProductId() {
 async function fetchProduct() {
   showLoading();
   const productId = getProductId();
+
   if (!productId) {
-    document.getElementById("product-page-container").innerHTML =
-      "<p>Product not found.</p>";
+    showPopup();
     return;
   }
+
   try {
     const response = await fetch(`${API_URL}/${productId}`);
     if (!response.ok) throw new Error("Failed to fetch product");
 
     const data = await response.json();
     const product = data.data;
+
+    if (!product) {
+      showPopup();
+      return;
+    }
 
     document.getElementById("product-image").src = product.image.url;
     document.getElementById("product-image").alt = product.image.alt;
@@ -63,8 +69,7 @@ async function fetchProduct() {
       .addEventListener("click", () => addToCart(product));
   } catch (error) {
     console.error("Error loading product:", error);
-    document.getElementById("product-page-container").innerHTML =
-      "<p>Failed to load product. Please try again later.</p>";
+    showPopup();
   } finally {
     hideLoading();
   }
@@ -99,6 +104,34 @@ function addToCart(product) {
 
   localStorage.setItem("cart", JSON.stringify(cart));
   alert(`Added ${product.title} (Size: ${selectedSize}) to cart! 🛒`);
+}
+
+function showPopup() {
+  const popup = document.createElement("div");
+  popup.id = "popup";
+  popup.innerHTML = `
+        <div class="popup-content">
+            <p>Item does not exist, taking you back to home in <span id="countdown">10</span> seconds...</p>
+            <button id="go-home">Go to Homepage</button>
+        </div>
+    `;
+
+  document.body.appendChild(popup);
+
+  let countdown = 10;
+  const countdownInterval = setInterval(() => {
+    countdown--;
+    document.getElementById("countdown").innerText = countdown;
+    if (countdown <= 0) {
+      clearInterval(countdownInterval);
+      window.location.href = "../index.html";
+    }
+  }, 1000);
+
+  document.getElementById("go-home").addEventListener("click", () => {
+    clearInterval(countdownInterval);
+    window.location.href = "../index.html";
+  });
 }
 
 document.addEventListener("DOMContentLoaded", fetchProduct);

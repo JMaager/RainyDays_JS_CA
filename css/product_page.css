@@ -249,3 +249,34 @@
   }
 }
 /*STYLING FOR SIZE BUTTONS*/
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup-content p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#go-home {
+  background-color: red;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#go-home:hover {
+  background-color: darkred;
+}
