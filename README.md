@@ -1,5 +1,7 @@
 # RainyDays – JavaScript Course Assignment
 
+![image](https://imagizer.imageshack.com/img923/2131/TzgMWP.png)
+
 RainyDays is a fictional e-commerce website specializing in outdoor jackets. This project was developed as a course assignment to demonstrate proficiency in JavaScript, HTML, and CSS.
 
 ## Description
